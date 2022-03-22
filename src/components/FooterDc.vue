@@ -157,6 +157,7 @@ export default {
   width: 100%;
   height: 27rem;
   background-image: url(../../src/assets/img/footer-bg.jpg);
+  overflow: hidden;
 }
 .footer-links-container {
   width: 40%;
@@ -187,8 +188,9 @@ export default {
   position: relative;
 }
 .dc-logo-background {
-  width: 500px;
+  width: 550px;
   position: absolute;
+  overflow: hidden;
   top: -100px;
   right: 0;
 }

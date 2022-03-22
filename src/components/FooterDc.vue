@@ -1,32 +1,61 @@
 <template>
   <footer>
-    <div class="container footer-container">
-      <div class="footer-links-container">
+      <!--FOOTER TOP-->
+    <div class="footer-top">
 
-        <div class="dc-comics-links">
-          <div class="title-links">DC COMICS</div>
-          <a href="#!" v-for="link in dcComicsLinks" :key="link">{{ link.text }}</a>
+      <div class="container footer-container-top">
+
+        <div class="footer-links-container">
+
+          <div class="dc-comics-links">
+            <div class="title-links">DC COMICS</div>
+            <a href="#!" v-for="link in dcComicsLinks" :key="link">{{link.text}}</a>
+          </div>
+
+          <div class="dc-comics-links">
+            <div class="title-links">DC</div>
+            <a href="#!" v-for="link in dcLinks" :key="link">{{ link.text }}</a>
+          </div>
+
+          <div class="dc-comics-links">
+            <div class="title-links">SITE</div>
+            <a href="#!" v-for="link in siteLinks" :key="link">{{ link.text }}</a>
+          </div>
+
+          <div class="dc-comics-links shop-links">
+            <div class="title-links">SHOP</div>
+            <a href="#!" v-for="link in shopLinks" :key="link">{{link.text}}</a>
+          </div>
+
         </div>
 
-        <div class="dc-comics-links">
-          <div class="title-links">DC</div>
-          <a href="#!" v-for="link in dcLinks" :key="link"> {{ link.text }} </a>
-        </div>
-
-        <div class="dc-comics-links">
-          <div class="title-links">SITE</div>
-          <a href="#!" v-for="link in siteLinks" :key="link">{{ link.text }} </a>
-        </div>
-
-        <div class="dc-comics-links shop-links">
-          <div class="title-links">SHOP</div>
-          <a href="#!" v-for="link in shopLinks" :key="link">{{ link.text }}</a>
-        </div>
+        <img class="dc-logo-background" src="../../src/assets/img/dc-logo-bg.png" alt="" />
 
       </div>
-
-      <img class="dc-logo-background" src="../../src/assets/img/dc-logo-bg.png" alt="">
     </div>
+
+    <!--FOOTER BOTTOM-->
+    <div class="footer-bottom">
+
+        <div class="container footer-container-bottom">
+
+            <div class="btn-container">
+                <button>SIGN-UP NOW!</button>
+            </div>
+
+            <div class="follow-container">
+                <span>FOLLOW US</span>
+                <img src="../../src/assets/img/footer-facebook.png" alt="facebook">
+                <img src="../../src/assets/img/footer-twitter.png" alt="twitter">
+                <img src="../../src/assets/img/footer-youtube.png" alt="youtube">
+                <img src="../../src/assets/img/footer-pinterest.png" alt="pinterest">
+                <img src="../../src/assets/img/footer-periscope.png" alt="periscope">
+            </div>
+
+        </div>
+
+    </div>
+
   </footer>
 </template>
 
@@ -124,7 +153,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-footer {
+.footer-top {
   width: 100%;
   height: 27rem;
   background-image: url(../../src/assets/img/footer-bg.jpg);
@@ -154,13 +183,54 @@ footer {
 .shop-links {
   margin-top: -60px;
 }
-.footer-container {
-    position: relative;
+.footer-container-top {
+  position: relative;
 }
 .dc-logo-background {
-    width: 530px;
-    position: absolute;
-    top: -120px;
-    right: 0;
+  width: 500px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+.footer-bottom {
+    height: 5.3rem;
+    background-color: #303030;
+    position: relative;
+    z-index: 10;
+}
+.footer-container-bottom {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    button {
+        background-color: transparent;
+        padding: .8em;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        border: 3px solid #0282f9;
+        cursor: pointer;
+    }
+}
+.follow-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+        font-weight: bold;
+        color: #0282f9;
+        font-size: 18px;
+    }
+    img {
+        cursor: pointer;
+    }
 }
 </style>

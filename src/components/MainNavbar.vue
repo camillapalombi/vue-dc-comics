@@ -34,6 +34,7 @@ name: 'MainNavbar',
 
 <style scoped lang="scss">
 nav {
+    z-index: 20;
     background-color: #0282f9;
     color: white;
     font-size: 12px;
@@ -46,6 +47,7 @@ nav {
 .nav-item {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 img {
     width: 40px;

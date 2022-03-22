@@ -40,7 +40,7 @@ nav {
     .nav-container {
         justify-content: space-between;
         align-items: center;
-        height: 10rem;
+        height: 9rem;
     }
 }
 .nav-item {

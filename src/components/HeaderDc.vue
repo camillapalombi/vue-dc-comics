@@ -84,8 +84,16 @@ ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    line-height: 7.7em;
     li {
         margin-right: 15px;
+        border-bottom: 4px solid transparent;
+        &:hover {
+            border-bottom: 4px solid #0282f9;
+            a {
+                color: #0282f9;
+            }
+        }
     }
 }
 a {

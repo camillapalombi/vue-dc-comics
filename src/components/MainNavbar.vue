@@ -33,13 +33,15 @@ name: 'MainNavbar',
 </script>
 
 <style scoped lang="scss">
+@import '../assets/style/partials/variables';
+
 nav {
     z-index: 20;
-    background-color: #0282f9;
+    background-color: $activeColor;
     color: white;
     font-size: 12px;
     .nav-container {
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         height: 9rem;
     }

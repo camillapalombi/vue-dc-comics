@@ -153,6 +153,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/style/partials/variables';
+
 .footer-top {
   width: 100%;
   height: 27rem;
@@ -173,7 +175,7 @@ export default {
   margin-right: 10px;
   a {
     text-decoration: none;
-    color: grey;
+    color: $textLightGrey;
   }
 }
 .title-links {
@@ -196,7 +198,7 @@ export default {
 }
 .footer-bottom {
     height: 5.3rem;
-    background-color: #303030;
+    background-color: $footerBackground;
     position: relative;
     z-index: 10;
 }
@@ -216,7 +218,7 @@ export default {
         font-weight: bold;
         font-size: 15px;
         border: none;
-        border: 3px solid #0282f9;
+        border: 3px solid $activeColor;
         cursor: pointer;
     }
 }
@@ -228,7 +230,7 @@ export default {
     justify-content: space-between;
     span {
         font-weight: bold;
-        color: #0282f9;
+        color: $activeColor;
         font-size: 18px;
     }
     img {

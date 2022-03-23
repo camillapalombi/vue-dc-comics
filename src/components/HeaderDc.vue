@@ -66,6 +66,8 @@ data () {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/style/partials/variables';
+
 .header-container {
     height: 8rem;
     justify-content: space-between;
@@ -89,16 +91,16 @@ ul {
         margin-right: 15px;
         border-bottom: 4px solid transparent;
         &:hover {
-            border-bottom: 4px solid #0282f9;
+            border-bottom: 4px solid $activeColor;
             a {
-                color: #0282f9;
+                color: $activeColor;
             }
         }
     }
 }
 a {
     text-decoration: none;
-    color: rgb(104, 104, 104);
+    color: $text_grey;
     font-weight: bold;
 }
 </style>

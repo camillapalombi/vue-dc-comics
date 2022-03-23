@@ -7,14 +7,16 @@
 </template>
 
 <script>
+
 export default {
 name: 'MainDc'
 }
 </script>
 
 <style scoped lang="scss">
+@import '../assets/style/partials/variables';
 main {
-    background-color: #1c1c1c;
+    background-color: $contentBackground;
     .main-container {
         height: 8rem;
         align-items: center;

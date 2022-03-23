@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <HeaderDc />
+    <main>
     <MainDc />
     <MainNavbar />
+    </main>
     <FooterDc />
   </div>
 </template>
@@ -12,7 +14,8 @@ import HeaderDc from './components/HeaderDc.vue'
 import MainDc from './components/MainDc.vue'
 import MainNavbar from './components/MainNavbar.vue'
 import FooterDc from './components/FooterDc.vue'
-import "./assets/style/style.scss";
+
+
 
 
 export default {
@@ -26,6 +29,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import './assets/style/style';
 </style>

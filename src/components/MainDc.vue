@@ -119,7 +119,14 @@ data () {
 }
 .section-main-bottom {
     width: 100%;
-    height: 35rem;
+    height: 45rem;
     background-color: $contentBackground;
+}
+.container-box-series {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 70px;
 }
 </style>

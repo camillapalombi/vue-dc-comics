@@ -9,22 +9,22 @@
 
           <div class="dc-comics-links">
             <div class="title-links">DC COMICS</div>
-            <a href="#!" v-for="link in dcComicsLinks" :key="link">{{link.text}}</a>
+            <a href="#!" v-for="link1 in dcComicsLinks" :key="link1">{{link1.text}}</a>
           </div>
 
           <div class="dc-comics-links">
             <div class="title-links">DC</div>
-            <a href="#!" v-for="link in dcLinks" :key="link">{{ link.text }}</a>
+            <a href="#!" v-for="link2 in dcLinks" :key="link2">{{ link2.text }}</a>
           </div>
 
           <div class="dc-comics-links">
             <div class="title-links">SITE</div>
-            <a href="#!" v-for="link in siteLinks" :key="link">{{ link.text }}</a>
+            <a href="#!" v-for="link3 in siteLinks" :key="link3">{{ link3.text }}</a>
           </div>
 
           <div class="dc-comics-links shop-links">
             <div class="title-links">SHOP</div>
-            <a href="#!" v-for="link in shopLinks" :key="link">{{link.text}}</a>
+            <a href="#!" v-for="link4 in shopLinks" :key="link4">{{link4.text}}</a>
           </div>
 
         </div>

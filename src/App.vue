@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <HeaderDc />
-    <main>
     <MainDc />
     <MainNavbar />
-    </main>
     <FooterDc />
   </div>
 </template>

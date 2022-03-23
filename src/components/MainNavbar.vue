@@ -1,4 +1,5 @@
 <template>
+<div>
   <nav>
       <div class="container nav-container">
           <div class="nav-item">
@@ -24,6 +25,7 @@
 
       </div>
   </nav>
+</div>
 </template>
 
 <script>
@@ -32,6 +34,7 @@ name: 'MainNavbar',
 }
 </script>
 
+<!--STYLE-->
 <style scoped lang="scss">
 @import '../assets/style/partials/variables';
 

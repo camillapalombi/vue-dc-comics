@@ -1,9 +1,13 @@
 <template>
-  <main>
-      <div class=container main-container>
-          <p>--> Content Goes Here --> </p>
-      </div>
-    </main>
+    <div>
+        <section class="section-main-top">
+            <img src="../../src/assets/img/jumbotron.jpg" alt="ciao">
+        </section>
+
+        <section class="section-main-bottom">
+            
+        </section>
+</div>
 </template>
 
 <script>
@@ -92,18 +96,14 @@ data () {
 }
 </script>
 
-<style scoped lang=scss>
+<style scoped lang="scss">
 @import '../assets/style/partials/variables';
-main {
-    background-color: $contentBackground;
-    .main-container {
-        height: 8rem;
-        align-items: center;
-        p {
-            font-size: 23px;
-            color: white;
-            font-weight: bold;
-        }
+.section-main-top {
+    width: 100%;
+    height: 30rem;
+    img {
+        height: 100%;
+        width: 100%;
     }
 }
 </style>

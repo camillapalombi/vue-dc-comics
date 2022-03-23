@@ -5,14 +5,14 @@
         </section>
 
         <section class="section-main-bottom">
+            <div class="label-current-series">CURRENT SERIES</div>
             <div class="container container-box-series">
                 <BoxSeries v-for="serie in currentSeries" :key="serie.series" :src-image="serie.thumb" :serie-title="serie.series"/>
-                <div class="single-box-series">
-                    <img class="series-img" src="" alt="">
-                    <p class="series-title"></p>
-                </div>
-
             </div>
+            <div class="container-btn-load">
+                <div class="btn-load-more">LOAD MORE</div>
+            </div>
+
         </section>
 </div>
 </template>
@@ -119,8 +119,9 @@ data () {
 }
 .section-main-bottom {
     width: 100%;
-    height: 45rem;
+    height: 50rem;
     background-color: $contentBackground;
+    position: relative;
 }
 .container-box-series {
     display: flex;
@@ -128,5 +129,30 @@ data () {
     justify-content: flex-start;
     align-items: stretch;
     padding-top: 70px;
+}
+.label-current-series {
+    width: 180px;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: #0282f9;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: -20px;
+    left: 200px;
+}
+.container-btn-load {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .btn-load-more {
+    width: 150px;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: #0282f9;
+    font-weight: bold;
+}
 }
 </style>

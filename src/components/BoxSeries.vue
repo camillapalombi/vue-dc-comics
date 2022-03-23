@@ -19,7 +19,7 @@ props: {
 .single-box-series {
     flex-basis: calc(16.66% - 15px);
     margin-left: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
     height: 190px;
     img {
         width: 100%;
@@ -29,6 +29,5 @@ props: {
 .series-title {
     color: white;
     margin-top: 10px;
-
 }
 </style>

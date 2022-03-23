@@ -13,9 +13,6 @@ import MainDc from './components/MainDc.vue'
 import MainNavbar from './components/MainNavbar.vue'
 import FooterDc from './components/FooterDc.vue'
 
-
-
-
 export default {
   name: 'App',
   components: {

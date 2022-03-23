@@ -72,28 +72,30 @@ data () {
     height: 8rem;
     justify-content: space-between;
     align-items: center;
-}
-.container-header-left {
+
+    .container-header-left {
     width: 20%;
-    img {
-        width: 60px;
+        img {
+            width: 70px;
+        }
     }
 }
 .container-header-right {
     width: 80%;
-}
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    line-height: 7.7em;
-    li {
-        margin-right: 15px;
-        border-bottom: 4px solid transparent;
-        &:hover {
-            border-bottom: 4px solid $activeColor;
-            a {
-                color: $activeColor;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        line-height: 7.7em;
+        li {
+            margin-right: 25px;
+            border-bottom: 4px solid transparent;
+            &:hover {
+                border-bottom: 4px solid $activeColor;
+                a {
+                    color: $activeColor;
+                }
             }
         }
     }
@@ -103,4 +105,5 @@ a {
     color: $text_grey;
     font-weight: bold;
 }
+
 </style>

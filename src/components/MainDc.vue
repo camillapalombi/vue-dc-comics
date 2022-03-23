@@ -5,16 +5,19 @@
         </section>
 
         <section class="section-main-bottom">
+
             <div class="label-current-series">CURRENT SERIES</div>
+
             <div class="container container-box-series">
                 <BoxSeries v-for="serie in currentSeries" :key="serie.series" :src-image="serie.thumb" :serie-title="serie.series"/>
             </div>
+
             <div class="container-btn-load">
                 <div class="btn-load-more">LOAD MORE</div>
             </div>
 
         </section>
-</div>
+    </div>
 </template>
 
 <script>
@@ -109,6 +112,7 @@ data () {
 
 <style scoped lang="scss">
 @import '../assets/style/partials/variables';
+
 .section-main-top {
     width: 100%;
     height: 30rem;
@@ -122,37 +126,41 @@ data () {
     height: 50rem;
     background-color: $contentBackground;
     position: relative;
+
+    .container-box-series {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding-top: 70px;
+    }
 }
-.container-box-series {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding-top: 70px;
-}
+
 .label-current-series {
     width: 180px;
     padding: 1em;
     text-align: center;
     color: white;
-    background-color: #0282f9;
+    background-color: $activeColor;
     font-weight: bold;
     font-size: 15px;
     position: absolute;
     top: -20px;
     left: 200px;
 }
+
 .container-btn-load {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    .btn-load-more {
-    width: 150px;
-    padding: 1em;
-    text-align: center;
-    color: white;
-    background-color: #0282f9;
-    font-weight: bold;
-}
+        .btn-load-more {
+        width: 150px;
+        padding: 1em;
+        text-align: center;
+        color: white;
+        background-color: $activeColor;
+        font-weight: bold;
+        cursor: pointer;
+        }
 }
 </style>

@@ -160,23 +160,26 @@ export default {
   height: 27rem;
   background-image: url(../../src/assets/img/footer-bg.jpg);
   overflow: hidden;
-}
-.footer-links-container {
-  width: 40%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.dc-comics-links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  line-height: 1.7em;
-  margin-right: 10px;
-  a {
-    text-decoration: none;
-    color: $textLightGrey;
-  }
+    .footer-container-top {
+      position: relative;
+        .footer-links-container {
+          width: 40%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+            .dc-comics-links {
+              display: flex;
+              flex-direction: column;
+              margin-top: 30px;
+              line-height: 1.7em;
+              margin-right: 10px;
+                a {
+                  text-decoration: none;
+                  color: $textLightGrey;
+                }
+            }
+        }
+    }
 }
 .title-links {
   color: white;
@@ -186,9 +189,6 @@ export default {
 .shop-links {
   margin-top: -60px;
 }
-.footer-container-top {
-  position: relative;
-}
 .dc-logo-background {
   width: 550px;
   position: absolute;
@@ -197,44 +197,45 @@ export default {
   right: 0;
 }
 .footer-bottom {
-    height: 5.3rem;
+    height: 6rem;
     background-color: $footerBackground;
     position: relative;
     z-index: 10;
+      .footer-container-bottom {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+          .btn-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+              button {
+                background-color: transparent;
+                padding: .8em;
+                color: white;
+                font-weight: bold;
+                font-size: 15px;
+                border: none;
+                border: 3px solid $activeColor;
+                cursor: pointer;
+              }
+          }
+      }
 }
-.footer-container-bottom {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.btn-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    button {
-        background-color: transparent;
-        padding: .8em;
-        color: white;
-        font-weight: bold;
-        font-size: 15px;
-        border: none;
-        border: 3px solid $activeColor;
-        cursor: pointer;
-    }
-}
+
 .follow-container {
     width: 35%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    span {
+      span {
         font-weight: bold;
         color: $activeColor;
         font-size: 18px;
-    }
-    img {
+      }
+      img {
         cursor: pointer;
-    }
+      }
 }
 </style>

@@ -43,22 +43,23 @@ nav {
     background-color: $activeColor;
     color: white;
     font-size: 12px;
-    .nav-container {
-        justify-content: space-around;
-        align-items: center;
-        height: 9rem;
-    }
-}
-.nav-item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-img {
-    width: 40px;
-    margin-right: 15px
+        .nav-container {
+            justify-content: space-around;
+            align-items: center;
+            height: 9rem;
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                        img {
+                            width: 40px;
+                            margin-right: 15px
+                        }
+                }
+        }
 }
 .img-locator {
     width: 30px;
 }
+
 </style>

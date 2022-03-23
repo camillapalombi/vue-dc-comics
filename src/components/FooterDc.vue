@@ -167,18 +167,18 @@ export default {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-            .dc-comics-links {
-              display: flex;
-              flex-direction: column;
-              margin-top: 30px;
-              line-height: 1.7em;
-              margin-right: 10px;
-                a {
-                  text-decoration: none;
-                  color: $textLightGrey;
-                }
-            }
         }
+    }
+}
+.dc-comics-links {
+display: flex;
+flex-direction: column;
+margin-top: 30px;
+line-height: 1.7em;
+margin-right: 10px;
+  a {
+    text-decoration: none;
+    color: $textLightGrey;
     }
 }
 .title-links {
@@ -218,6 +218,9 @@ export default {
                 border: none;
                 border: 3px solid $activeColor;
                 cursor: pointer;
+                &:hover {
+                  background-color: $activeColor;
+                }
               }
           }
       }

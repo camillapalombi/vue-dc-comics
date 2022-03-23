@@ -147,6 +147,7 @@ data () {
     position: absolute;
     top: -20px;
     left: 200px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .container-btn-load {
@@ -160,7 +161,11 @@ data () {
         color: white;
         background-color: $activeColor;
         font-weight: bold;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
         cursor: pointer;
+        &:hover {
+            background-color: #59afff;
+        }
         }
 }
 </style>

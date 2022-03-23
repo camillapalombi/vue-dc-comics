@@ -5,12 +5,20 @@
         </section>
 
         <section class="section-main-bottom">
-            
+            <div class="container container-box-series">
+                <BoxSeries v-for="serie in currentSeries" :key="serie.series" :src-image="serie.thumb" :serie-title="serie.series"/>
+                <div class="single-box-series">
+                    <img class="series-img" src="" alt="">
+                    <p class="series-title"></p>
+                </div>
+
+            </div>
         </section>
 </div>
 </template>
 
 <script>
+import BoxSeries from '../components/BoxSeries.vue'
 
 export default {
 name: 'MainDc',
@@ -92,6 +100,9 @@ data () {
                     ]
     }
             
+        },
+        components: {
+            BoxSeries
         }
 }
 </script>
@@ -105,5 +116,10 @@ data () {
         height: 100%;
         width: 100%;
     }
+}
+.section-main-bottom {
+    width: 100%;
+    height: 35rem;
+    background-color: $contentBackground;
 }
 </style>

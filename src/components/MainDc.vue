@@ -163,6 +163,7 @@ data () {
         font-weight: bold;
         box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
         cursor: pointer;
+        transition: all .6s;
         &:hover {
             background-color: #59afff;
         }

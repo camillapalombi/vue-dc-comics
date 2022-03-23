@@ -26,6 +26,10 @@ props: {
         img {
             width: 100%;
             height: 100%;
+            transition: all .6s;
+            &:hover {
+            transform: scale(1.1);
+            }
         }
 }
 .series-title {

@@ -218,6 +218,7 @@ margin-right: 10px;
                 border: none;
                 border: 3px solid $activeColor;
                 cursor: pointer;
+                transition: all .6s;
                 &:hover {
                   background-color: $activeColor;
                 }

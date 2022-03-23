@@ -91,6 +91,7 @@ data () {
         li {
             margin-right: 25px;
             border-bottom: 4px solid transparent;
+            transition: all .5s;
             &:hover {
                 border-bottom: 4px solid $activeColor;
                 a {
@@ -104,6 +105,7 @@ a {
     text-decoration: none;
     color: $text_grey;
     font-weight: bold;
+    transition: all .5s;
 }
 
 </style>
